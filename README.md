@@ -31,11 +31,38 @@
 ### 2. Preparando ambiente
 1. ~~Preparando ambiente~~
 2. ~~Instalação Global do PHP~~
-3. ~~Instalação Global do Composer~~
+3. [Instalação Global do Composer]( https://getcomposer.org/download/  )
+	```shell
+		$ composer global require laravel/installer 
+	```
+	- Variaveis de ambiente 
+		- macOS: $HOME/.composer/vendor/bin
+		- Windows: %USERPROFILE%\AppData\Roaming\Composer\vendor\bin
 4. Instalação do NodeJS
 	- *No (Laravel Mix) é usado node para trabalhar com webpack* [Laravel Mix](https://laravel.com/docs/7.x/mix) - [iMasters](https://imasters.com.br/css/gerenciando-assets-com-laravel-mix)
-5. Instalação do Laravel via terminal
+5. Instalação do Laravel ( Criando projeto) via terminal [artisan](https://laravel-docs-pt-br.readthedocs.io/en/5.0/artisan/ )
+	- laravel new blog --> Cria um projeto na versão do laravel instalada
+	- Composer create-project --prefer-dist laravel/laravel nome_projeto
+	- composer create-project laravel/laravel your-project-name 5.8 --> _Cria projeto na Versao desejada_
+		- Depois de criado o projeto entra na pasta e executa o comando CLI para subir um servico http via PHP
+		- ```Shell    
+			$ php artisan serve 
+			$ php artisan serve --host=localhost --port=8080	```
 6. Arquitetura de Pastas
+	- **/apps**  _Os Models são criados nessa pasta mas podem ser organizados numa subpasta_
+		-  **/Http/Controller** Camada de controle da aplicação que interage com a view
+			- ```Shell
+				$ php artisan make:controller NomeDoController	```
+		-  **/Http/Middleware** Pode ser usado por exemplo como um interceptador entre rota-controller
+			- ```Shell
+				$ php artisan make:middleware NomeDoMiddleware	```
+	- **/config**  _Onde o sistema carrega/ configuraçoes da aplicaçao e muitas são setadas no arquivo .env_
+	- **/databaseg**  _Onde ficam as migrations(Versionamento do banco) e seeders( Inserção de dados para teste)_
+		- ```Shell
+			$ php artisan make:migration create_users_table
+			$ php artisan make:seeder TableNameTableSeeder	```
+	
+
 7. Configurando Projeto
 ### 3. Primeiro contato
 1. Primeiro Contato
