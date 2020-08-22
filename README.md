@@ -1,18 +1,37 @@
 # Anotações curso de Laravel 
 ***
 ### 1. Laravel Developer(Apresentação do curso)
-1. Laravel Developer
-2. Convite Especial Telegram
-3. Framework vs CMS
-4. Ecossistema Laravel
-5. Versões do Framework
+1. ~~Laravel Developer~~
+2. ~~Convite Especial Telegram~~
+3. ~~Framework vs CMS~~
+4. [Ecossistema Laravel](https://laravel.com/)
+	-	Vapor - Serverless Plataform
+	-	**Forge** - Server Management
+	-	Envoyer - Zero Downtime Deployment, gerenciamento de deploy
+	-	Horizon - Queue Monitoring, Load balance
+	-	Nova - Administration Panel
+	-	Echo - Realtime Events
+	-	**Lumem** - Micro-Framework, muito util para api
+	-	Homestead - Pre-Packaged Vagrant Box
+	-	Spark - Saas App Scaffolding
+	-	Valet - Dev Eviroment for Macs
+	-	Mix - Webpack Asset Compilation
+	-	Cashier - Subscription Billing Integration
+	-	Dusk - Browser Testing and Automation 
+	-	**Passport** - Painless OAuth2 Implementation 
+	-	Scout - Full-Text-Search 
+	-	Socialite-OAuth Autentication
+	-	Telescope - Debug Assistant 
+	-	**Tinker** - Interactive REPL 
+5. ~~Versões do Framework~~
+	- *paradigm.major.minor*
 6. [UPDATE] Novo sistema de versões
 7. Abstração da aplicação
-8. Documentação
+8. [Documentação](https://laravel.com/docs/master)
 ### 2. Preparando ambiente
-1. Preparando ambiente
-2. Instalação Global do PHP 
-3. Instalação Global do Composer
+1. ~~Preparando ambiente~~
+2. ~~Instalação Global do PHP~~
+3. ~~Instalação Global do Composer~~
 4. Instalação do NodeJS
 	- *No (Laravel Mix) é usado node para trabalhar com webpack* [Laravel Mix](https://laravel.com/docs/7.x/mix) - [iMasters](https://imasters.com.br/css/gerenciando-assets-com-laravel-mix)
 5. Instalação do Laravel via terminal
