@@ -52,18 +52,32 @@
 	- **/apps**  _Os Models são criados nessa pasta mas podem ser organizados numa subpasta_
 		-  **/Http/Controller** Camada de controle da aplicação que interage com a view
 			- ```Shell
-				$ php artisan make:controller NomeDoController	```
+				$ php artisan make:controller NomeDoController	
+				```
 		-  **/Http/Middleware** Pode ser usado por exemplo como um interceptador entre rota-controller
 			- ```Shell
-				$ php artisan make:middleware NomeDoMiddleware	```
+				$ php artisan make:middleware NomeDoMiddleware	
+				```
 	- **/config**  _Onde o sistema carrega/ configuraçoes da aplicaçao e muitas são setadas no arquivo .env_
-	- **/databaseg**  _Onde ficam as migrations(Versionamento do banco) e seeders( Inserção de dados para teste)_
+	- **/database**  _Onde ficam as migrations(Versionamento do banco) e seeders( Inserção de dados para teste)_
 		- ```Shell
 			$ php artisan make:migration create_users_table
-			$ php artisan make:seeder TableNameTableSeeder	```
-	
-
+			$ php artisan make:seeder TableNameTableSeeder
+			```
+	- **/resourses**  _Arquivos de tradução e views_
+	- **/routes**  _web.php(Rotas para web view), api.php(Rotas da api)_
+	- **/storage**  _Arquivos externos como uploads, logs, bkps..._
+	- **/.env**  _Arquivo de configuracoes do framew..._
 7. Configurando Projeto
+	- Alterando o namespace da app.
+	- ```shell 
+		$ php artisan app:name NomeDaAplicação
+		```
+	- Alterando ***timezone*** em ***/config/app.php***
+		```PHP
+			'timezone'=>'America/Sao_Paulo'
+		```
+	- Tradução das mensagens do Laravel [Upinside](https://github.com/andrebmachadoo/laravel-pt-BR)
 ### 3. Primeiro contato
 1. Primeiro Contato
 2. Definindo Rota
