@@ -52,7 +52,14 @@
 	- **/apps**  _Os Models são criados nessa pasta mas podem ser organizados numa subpasta_
 		-  **/Http/Controller** Camada de controle da aplicação que interage com a view
 			- ```Shell
-				$ php artisan make:controller NomeDoController	
+				//Cria o arquivo do controller   
+				$ php artisan make:controller ControllerName
+				//Cria o arquivo do controller com os métodos no padrão REST  
+				$ php artisan make:controller ControllerName --resource
+				//Cria o controller com um único action __invoke() e serve para controllers que terão somente uma action geralmente utilizado para encaminhar requisições para outros lugares.   
+				$ php artisan make:controller ControllerName --invoke
+				//Cria o controller com métodos + modelo
+				$ php artisan make:controller ControllerName --resource --model=ModelName
 				```
 		-  **/Http/Middleware** Pode ser usado por exemplo como um interceptador entre rota-controller
 			- ```Shell
@@ -78,7 +85,7 @@
 			'timezone'=>'America/Sao_Paulo'
 		```
 	- Tradução das mensagens do Laravel [Upinside](https://github.com/andrebmachadoo/laravel-pt-BR)
-### 3. Primeiro contato
+### [3. Primeiro contato](https://github.com/andrebmachadoo/LaravelNotes/blob/master/PrimeiroContato.md) 
 1. Primeiro Contato
 2. Definindo Rota
 	- 1 Cadastro de um Imóvel
